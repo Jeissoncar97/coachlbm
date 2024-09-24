@@ -1,0 +1,50 @@
+.header {
+    min-width: 330px;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(.9) ;
+    animation: changeBackground 3s infinite;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.838); /* Capa oscura con transparencia */
+    z-index: 1; /* Mantiene la capa oscura detrás del logo */
+  }
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('../assets/photosHeader/photo1.jpg');
+    }
+
+    20% {
+        background-image: url('../assets/photosHeader/photo2.jpg');
+    }
+
+    40% {
+        background-image: url('../assets/photosHeader/photo3.jpg');
+    }
+
+    60% {
+        background-image: url('../assets/photosHeader/photo4.jpg');
+    }
+
+    80% {
+        background-image: url('../assets/photosHeader/photo5.jpg');
+    }
+    100% {
+        background-image: url('../assets/photosHeader/photo6.jpg');
+    }
+}
+.logo_header {
+    width: 100%;
+    position: relative;
+    z-index: 10; /* Para asegurarte que el logo esté sobre el fondo oscuro */
+    min-width: 330px;
+  }
