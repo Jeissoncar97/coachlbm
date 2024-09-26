@@ -1,0 +1,9 @@
+.about{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+iframe{
+    min-width: 321px;
+    min-height: 180px;
+    border: none;
+}
