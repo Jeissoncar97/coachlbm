@@ -1,27 +1,36 @@
 .header {
 	position: relative;
-	padding: 110px 30px;
-	min-width: 330px;
+	padding: 110px 15px;
+	min-width: 320px;
 	max-width: 460px;
 	text-align: center;
 	background-size: cover;
 	background-position: center;
 	animation: changeBackground 3s infinite;
-    & h1{
-        font-family: "Stardos Stencil", system-ui;
-        font-size: 60px;
-        position: relative;
-        z-index: 10;
-        color: var(--white);
-        display: flex;
-        flex-direction: column;
-        line-height: 60px;
-        padding-top: 20px;
-        font-weight: bold;        
-        & span{
-            color: var(--primary-color);
-        }
-    }
+    h1 {
+		font-family: "Stardos Stencil", system-ui;
+		font-size: 55px;
+		position: relative;
+		z-index: 10;
+		color: var(--white);
+		display: inline-flex;
+		flex-direction: column;
+		line-height: 60px;
+		padding-top: 20px;
+		font-weight: bold;
+		align-items: center;
+		justify-content: center;
+		max-width: 100%;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+	
+		span {
+			color: var(--primary-color);
+			width: auto;
+			text-align: center;
+			display: block;
+		}
+	}
 }
 .header::before {
 	content: "";
@@ -34,7 +43,7 @@
 	z-index: 1;
 }
 .logo_header {
-	width: 100%;
+	width: 80%;
 	position: relative;
 	z-index: 10;
 }
