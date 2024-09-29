@@ -9,8 +9,7 @@
 	animation: changeBackground 3s infinite;
     h1 {
 		font-family: "Stardos Stencil", system-ui;
-		font-size: 55px;
-		position: relative;
+		position: absolute;
 		z-index: 10;
 		color: var(--white);
 		display: inline-flex;
