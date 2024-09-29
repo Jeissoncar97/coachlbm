@@ -2,8 +2,24 @@
     background-color: var(--primary-color);
     text-align: center;
 }
-iframe{
+h2{
+    color: var(--white);
+    padding-top: 1rem 0;
+}
+
+
+.video-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .video {
+    box-shadow: 0px 0px 20px black;
+    margin: 137px 0;    
+    width: 90%;
+    height: auto;
     min-width: 321px;
     min-height: 180px;
-    border: none;
-}
+  }
+  
+  
