@@ -1,0 +1,24 @@
+.offer{
+    background-color: var(--general-backGroun);
+    text-align: center;
+}
+.timer{
+    color: var(--white);
+    font-family: "Anton", sans-serif;
+    font-size: 40px;
+}
+.timerper{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #FBC926, #E28950,#FBC926);
+}
+.timerper div{
+    width: 65px;
+}
+.timerper div p:first-child {
+    height: 45px;
+}
+.hours, .days, .minuts, .secons{
+    color: var(--black);
+    font-size: 20px;
+}

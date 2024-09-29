@@ -1,5 +1,4 @@
 import js from '@eslint/js';
-import globals from 'globals';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
@@ -15,8 +14,15 @@ export default [
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
       },
+      globals: {
+        window: 'readonly', // Define `window` como global, solo lectura
+      },
     },
-    settings: { react: { version: 'detect' } }, // Cambiado a 'detect'
+    env: {
+      browser: true, // Esto indica que el código se ejecuta en un entorno de navegador
+      es2021: true,
+    },
+    settings: { react: { version: 'detect' } },
     plugins: {
       react,
       'react-hooks': reactHooks,
