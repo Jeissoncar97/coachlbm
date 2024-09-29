@@ -7,10 +7,14 @@
     font-family: "Anton", sans-serif;
     font-size: 40px;
 }
+.timer h2{
+    padding: 10px 0;
+}
 .timerper{
     display: flex;
     justify-content: center;
     background: linear-gradient(90deg, #FBC926, #E28950,#FBC926);
+    padding: 20px;
 }
 .timerper div{
     width: 65px;

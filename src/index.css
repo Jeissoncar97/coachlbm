@@ -1,20 +1,21 @@
-:root{
-    --white: #fff;
-    --primary-color: #9747ff;
-    --black: #000;
-    --general-backGroun: #141118;
-    --gradient-gold: linear-gradient(90deg, #FBC926, #E28950,#FBC926);
+:root {
+	--white: #fff;
+	--primary-color: #9747ff;
+	--black: #000;
+	--general-backGroun: #141118;
+	--gradient-gold: linear-gradient(90deg, #fbc926, #e28950, #fbc926);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-h1{
-    font-size: 60px;
+h1 {
+	font-size: 60px;
 }
-h2{
-font-size: 50px;
-font-family: "Anton", sans-serif;
-font-weight: 400;
+h2 {
+	font-size: 50px;
+	font-family: "Anton", sans-serif;
+	color: var(--white);
+	font-weight: 400;
 }
