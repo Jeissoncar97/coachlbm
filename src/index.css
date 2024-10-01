@@ -2,20 +2,33 @@
 	--white: #fff;
 	--primary-color: #9747ff;
 	--black: #000;
-	--general-backGroun: #141118;
+	--general-background: #141118;
 	--gradient-gold: linear-gradient(90deg, #fbc926, #e28950, #fbc926);
+	--gray: #949396;
 }
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+@font-face {
+	font-family: "Zuume";
+	src: url("./assets/fonts/ZuumeBold.ttf");
+}
+@font-face {
+	font-family: "Stencil";
+	src: url("./assets/fonts/StencilStdBold.ttf");
+}
 h1 {
 	font-size: 60px;
+	font-family: "Stencil";
+	font-weight: 400;
+	letter-spacing: 2px;
 }
 h2 {
 	font-size: 50px;
-	font-family: "Anton", sans-serif;
+	font-family: "Zuume", sans-serif;
 	color: var(--white);
 	font-weight: 400;
+	text-transform: uppercase;
 }

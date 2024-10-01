@@ -1,11 +1,11 @@
 .offer{
-    background-color: var(--general-backGroun);
+    background-color: var(--general-background);
     text-align: center;
 }
 .timer{
     color: var(--white);
-    font-family: "Anton", sans-serif;
-    font-size: 40px;
+    font-family: "Zuume", sans-serif;
+    font-size: 50px;
 }
 .timer h2{
     padding: 10px 0;
@@ -24,5 +24,5 @@
 }
 .hours, .days, .minuts, .secons{
     color: var(--black);
-    font-size: 20px;
+    font-size: 25px;
 }

@@ -5,7 +5,7 @@ import '../styles/personalizedReport.css'
 const PersonalizedReports = () => {
   return (
     <section className='personalized_reports'>
-      <img src={ImgReport} alt="" srcset="" />
+      <img src={ImgReport} alt="" />
       <p>Recibe tus informes
       personalizados y visualizalos donde quieras!</p>
       <div>

@@ -1,0 +1,60 @@
+.faq {
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0;
+	margin: 0 auto;
+	text-align: start;
+	background-color: var(--general-background);
+	color: var(--white);
+}
+.faq h3 {
+	cursor: pointer;
+}
+.faq p {
+	color: var(--black);
+}
+.faq details {
+    font-weight: 900;
+	font-family: "Urbanist", sans-serif;
+	padding: 10px;
+	width: 80%;
+	font-size: 15px;
+	margin-bottom: 5px;
+	background-color: var(--gray);
+}
+.faq .copy_right {
+	font-family: "Urbanist", sans-serif;
+	font-size: 10px;
+	margin: 30px 0;
+}
+.faq summary {
+	list-style: none;
+}
+/* Oculta el marcador predeterminado */
+.faq details summary {
+    text-transform: uppercase;
+	list-style: none; /* Quita el marcador predeterminado */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 10px;
+}
+
+/* Añade un marcador personalizado a la derecha */
+.faq details summary::after {
+	content: "\25BA"; /* Triángulo apuntando hacia la derecha (puedes cambiarlo por otro símbolo o ícono) */
+	font-size: 1.2em;
+	transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.564))
+}
+
+/* Rotar el marcador cuando el <details> está abierto */
+.faq details[open] summary::after {
+	transform: rotate(
+		90deg
+	); /* Rotación para mostrar hacia abajo cuando esté abierto */
+}
