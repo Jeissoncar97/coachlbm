@@ -1,5 +1,54 @@
-.plans{
+.plan-section {
+    padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     background-color: var(--general-background);
-    height: 300px;
-    width: 100%s;
+}
+
+.plan-options {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.plan-options button {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	background-color: var(--gray);
+	border-radius: 5px;
+}
+
+.plan-options button.active-plan {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.plan-details {
+    color: var(--white);
+	padding: 20px;
+	border-radius: 10px;
+    height: 362px;
+    border: 1px solid  ; /* Define el grosor del borde */
+
+	width: 300px;
+}
+
+.plan-details h2 {
+	margin-bottom: 10px;
+}
+
+.plan-prices {
+	margin-top: 10px;
+}
+
+.plan-button {
+	margin-top: 20px;
+	padding: 10px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }

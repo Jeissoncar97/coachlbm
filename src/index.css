@@ -5,6 +5,9 @@
 	--general-background: #141118;
 	--gradient-gold: linear-gradient(90deg, #fbc926, #e28950, #fbc926);
 	--gray: #949396;
+	--gradien-GoldStandardPresencial: linear-gradient(135deg, #9747FF, #fbc926);
+	--gradient-GoldStandardOnline: linear-gradient(135deg, #9747FF, #0D56DD);
+	--gradient-PremiumBasic: linear-gradient(90deg, #9747ff,#9747ff);
 }
 * {
 	margin: 0;
