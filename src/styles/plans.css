@@ -32,18 +32,58 @@
 	border-radius: 10px;
     height: 362px;
     border: 1px solid  ; /* Define el grosor del borde */
-
+	position: relative;
 	width: 300px;
 }
-
+.plan-details .training{
+	display: flex;
+	justify-content: space-between;
+}
+.plan-details .nutrition{
+	display: flex;
+	justify-content: space-between;
+}
+.plan-details .reports{
+	display: flex;
+	justify-content: space-between;
+}
+.plan-details .line_separation{
+	height: 2px;
+    background-color: var(--primary-color);
+    width: 70%;
+    border: none;
+}
+.plan-details ul{
+	list-style: none;
+}
 .plan-details h2 {
 	margin-bottom: 10px;
 }
-
+.plan-details .bonus{
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-details .discount-percentage{
+	position: absolute;
+	width: 50px;
+	font-size: 40px;
+	left: 0;
+	bottom: 50%;
+	color: var(--yelow);
+	font-family: "Zuume";
+	transform: rotate(-45deg);
+}
 .plan-prices {
 	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
 }
-
+.plan-prices .discount{
+	text-decoration: line-through;
+}
 .plan-button {
 	margin-top: 20px;
 	padding: 10px;

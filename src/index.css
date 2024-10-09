@@ -2,6 +2,7 @@
 	--white: #fff;
 	--primary-color: #9747ff;
 	--black: #000;
+	--yelow: #FBC926;
 	--general-background: #141118;
 	--gradient-gold: linear-gradient(90deg, #fbc926, #e28950, #fbc926);
 	--gray: #949396;
@@ -34,4 +35,12 @@ h2 {
 	color: var(--white);
 	font-weight: 400;
 	text-transform: uppercase;
+}
+h4{
+	font-size: 15px;
+    font-family: "Urbanist", sans-serif;
+    color: var(--primary-color);
+    font-weight: 900;
+    text-transform: uppercase;
+
 }

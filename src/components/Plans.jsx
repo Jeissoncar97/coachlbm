@@ -8,9 +8,12 @@ const PlanSection = () => {
 			name: "Gold Standard Presencial",
 			duration: "30 Días",
 			discount: "60% OFF",
-			training: "Diseño de Entrenamiento: 30 Días",
-			nutrition: "Timing Nutricional: 30 Días",
-			reports: "Informes: Semanal",
+			training1: "Diseño de Entrenamiento:",
+			training2: "30 Días",
+			nutrition1: "Timing Nutricional:",
+			nutrition2: "30 Días",
+			reports1: "Informes:",
+			reports2: "Semanal",
 			bonus: [
 				"Comunicación Directa via Chat + Llamada",
 				"Recetas",
@@ -25,16 +28,19 @@ const PlanSection = () => {
 			discountedMonthlyPrice: "$776.000 COP",
 			buttonText: "Lo Quiero!",
 			buttonColor: "yellow",
-      borderColor: "var(--gradien-GoldStandardPresencial) 1",
+			borderColor: "var(--gradien-GoldStandardPresencial) 1",
 		},
 		{
 			id: 2,
 			name: "Gold Standard Online",
 			duration: "24 Días",
 			discount: "50% OFF",
-			training: "Diseño de Entrenamiento: 24 Días",
-			nutrition: "Timing Nutricional: 24 Días",
-			reports: "Informes: Quincenal",
+			training1: "Diseño de Entrenamiento:",
+			training2: "24 Días",
+			nutrition1: "Timing Nutricional:",
+			nutrition2: "24 Días",
+			reports1: "Informes:",
+			reports2: "Quincenal",
 			bonus: [
 				"Consultas via Chat + Llamada",
 				"Recetas",
@@ -46,17 +52,20 @@ const PlanSection = () => {
 			discountedMonthlyPrice: "$582.000 COP",
 			buttonText: "Lo Quiero!",
 			buttonColor: "blue",
-      borderColor: "var(--gradient-GoldStandardOnline) 1",
-      
+			borderColor: "var(--gradient-GoldStandardOnline) 1",
+
 		},
 		{
 			id: 3,
 			name: "Premium Basic",
 			duration: "24 Días",
 			discount: "40% OFF",
-			training: "Diseño de Entrenamiento: 20 Días",
-			nutrition: "Timing Nutricional: 20 Días",
-			reports: "Informes: Mensual",
+			training1: "Diseño de Entrenamiento:",
+			training2: "20 Días",
+			nutrition1: "Timing Nutricional:",
+			nutrition2: "20 Días",
+			reports1: "Informes:",
+			reports2: "Mensual",
 			bonus: ["Consultas via Chat"],
 			trimestralPrice: "$1'108.000 COP",
 			discountedTrimestralPrice: "$664.800 COP",
@@ -64,7 +73,7 @@ const PlanSection = () => {
 			discountedMonthlyPrice: "$232.800 COP",
 			buttonText: "Lo Quiero!",
 			buttonColor: "purple",
-      borderColor: "var(--gradient-PremiumBasic) 1",
+			borderColor: "var(--gradient-PremiumBasic) 1",
 		},
 	];
 
@@ -86,13 +95,23 @@ const PlanSection = () => {
 				))}
 			</div>
 
-			<div className="plan-details" style={{borderImage : selectedPlan.borderColor  }}>
-				<p>{selectedPlan.discount}</p>
-				<p>{selectedPlan.training}</p>
-				<p>{selectedPlan.nutrition}</p>
-				<p>{selectedPlan.reports}</p>
-				<div>
+			<div className="plan-details" style={{ borderImage: selectedPlan.borderColor }}>
+				<p className="discount-percentage">{selectedPlan.discount}</p>
+				<div className="training">
+					<p>{selectedPlan.training1}</p>
+					<p>{selectedPlan.training2}</p>
+				</div>
+				<div className="nutrition">
+					<p>{selectedPlan.nutrition1}</p>
+					<p>{selectedPlan.nutrition2}</p>
+				</div>
+				<div className="reports">
+					<p>{selectedPlan.reports1}</p>
+					<p>{selectedPlan.reports2}</p>
+				</div>
+				<div className="bonus">
 					<h4>BONUS</h4>
+					<div className="line_separation"></div>
 					<ul>
 						{selectedPlan.bonus.map((item, i) => (
 							<li key={i}>{item}</li>
@@ -101,26 +120,30 @@ const PlanSection = () => {
 				</div>
 				<div className="plan-prices">
 					{selectedPlan.annualPrice && (
-						<>
-							<p>Plan Anual: {selectedPlan.annualPrice}</p>
+						<div>
+							<p>Plan Anual: </p>
+							<p className="discount">{selectedPlan.annualPrice}</p>
 							<p>
-								Descuento: {selectedPlan.discountedAnnualPrice}
+								{selectedPlan.discountedAnnualPrice}
 							</p>
-						</>
+						</div>
 					)}
 					{selectedPlan.trimestralPrice && (
-						<>
-							<p>
-								Plan Trimestral: {selectedPlan.trimestralPrice}
+						<div>
+							<p>Plan Trimestral: </p>
+							<p className="discount">
+								{selectedPlan.trimestralPrice}
 							</p>
 							<p>
-								Descuento:{" "}
 								{selectedPlan.discountedTrimestralPrice}
 							</p>
-						</>
-					)}
-					<p>Plan Mensual: {selectedPlan.monthlyPrice}</p>
-					<p>Descuento: {selectedPlan.discountedMonthlyPrice}</p>
+						</div>
+					)}	
+					<div>
+						<p>Plan Mensual: </p>
+						<p className="discount">{selectedPlan.monthlyPrice}</p>
+						<p>{selectedPlan.discountedMonthlyPrice}</p>
+					</div>
 				</div>
 				<button
 					style={{ backgroundColor: selectedPlan.buttonColor }}
