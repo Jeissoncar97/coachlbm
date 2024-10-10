@@ -51,9 +51,7 @@
 	transition: transform 0.3s ease;
 	filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.564));
 }
-.faq details[open]{
-	border: 1px solid var(--white);
-}
+
 
 .faq details[open] summary::after {
 	transform: rotate(90deg);

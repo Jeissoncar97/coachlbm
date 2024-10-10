@@ -29,6 +29,7 @@ const PlanSection = () => {
 			buttonText: "Lo Quiero!",
 			buttonColor: "yellow",
 			borderColor: "var(--gradien-GoldStandardPresencial) 1",
+			backgraundColor: "var(--gradien-GoldStandardPresencial)"
 		},
 		{
 			id: 2,
@@ -53,7 +54,8 @@ const PlanSection = () => {
 			buttonText: "Lo Quiero!",
 			buttonColor: "blue",
 			borderColor: "var(--gradient-GoldStandardOnline) 1",
-
+			backgraundColor: "var(--gradient-GoldStandardOnline)"
+			
 		},
 		{
 			id: 3,
@@ -74,6 +76,7 @@ const PlanSection = () => {
 			buttonText: "Lo Quiero!",
 			buttonColor: "purple",
 			borderColor: "var(--gradient-PremiumBasic) 1",
+			backgraundColor: "var(--gradient-PremiumBasic)"
 		},
 	];
 
@@ -87,25 +90,31 @@ const PlanSection = () => {
 						key={index}
 						onClick={() => setSelectedPlan(plan)}
 						className={
-							selectedPlan.id === plan.id ? "active-plan" : ""
+							selectedPlan.id === plan.id
+							 ? "active-plan" : ""
 						}
+						style={
+							selectedPlan.id === plan.id
+							  ? { background: selectedPlan.backgraundColor } // Estilo en línea cuando está activo
+							  : {}
+						  }
 					>
-						{plan.name}
+						<p className="plan-option-title">{plan.name}</p><p>24 días</p>
 					</button>
 				))}
 			</div>
 
 			<div className="plan-details" style={{ borderImage: selectedPlan.borderColor }}>
 				<p className="discount-percentage">{selectedPlan.discount}</p>
-				<div className="training">
+				<div className="training plan-inf">
 					<p>{selectedPlan.training1}</p>
 					<p>{selectedPlan.training2}</p>
 				</div>
-				<div className="nutrition">
+				<div className="nutrition plan-inf">
 					<p>{selectedPlan.nutrition1}</p>
 					<p>{selectedPlan.nutrition2}</p>
 				</div>
-				<div className="reports">
+				<div className="reports plan-inf">
 					<p>{selectedPlan.reports1}</p>
 					<p>{selectedPlan.reports2}</p>
 				</div>
@@ -114,7 +123,7 @@ const PlanSection = () => {
 					<div className="line_separation"></div>
 					<ul>
 						{selectedPlan.bonus.map((item, i) => (
-							<li key={i}>{item}</li>
+							<li key={i}>・{item}</li>
 						))}
 					</ul>
 				</div>
@@ -146,8 +155,13 @@ const PlanSection = () => {
 					</div>
 				</div>
 				<button
-					style={{ backgroundColor: selectedPlan.buttonColor }}
-					className="plan-button"
+					className="plan-button1"
+					style={{background: selectedPlan.backgraundColor}}
+				>
+					{selectedPlan.buttonText}
+				</button>
+				<button
+					className="plan-button2"
 				>
 					{selectedPlan.buttonText}
 				</button>
