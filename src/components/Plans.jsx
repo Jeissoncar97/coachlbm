@@ -29,7 +29,10 @@ const PlanSection = () => {
 			buttonText: "Lo Quiero!",
 			buttonColor: "yellow",
 			borderColor: "var(--gradien-GoldStandardPresencial) 1",
-			backgraundColor: "var(--gradien-GoldStandardPresencial)"
+			backgraundColor: "var(--gradien-GoldStandardPresencial)",
+			messageWhatsapp1: `¡Hola! Estoy interesado en el plan *Gold Standard Presencial* con 60% de descuento.%0A%0AMe gustaría saber más sobre el precio anual de *$2'216.000 COP*`,
+			messageWhatsapp2: `¡Hola! Estoy interesado en el plan *Gold Standard Presencial* con 60% de descuento.%0A%0AMe gustaría saber más sobre el precio mensual de *$776.000 COP*`
+			
 		},
 		{
 			id: 2,
@@ -54,7 +57,9 @@ const PlanSection = () => {
 			buttonText: "Lo Quiero!",
 			buttonColor: "blue",
 			borderColor: "var(--gradient-GoldStandardOnline) 1",
-			backgraundColor: "var(--gradient-GoldStandardOnline)"
+			backgraundColor: "var(--gradient-GoldStandardOnline)",
+			messageWhatsapp1: `¡Hola! Estoy interesado en el plan *Gold Standard Online* con 50% de descuento.%0A%0AMe gustaría saber más sobre el precio trimestral de *$1'662.000 COP*`,
+			messageWhatsapp2: `¡Hola! Estoy interesado en el plan *Gold Standard Online* con 50% de descuento.%0A%0AMe gustaría saber más sobre el precio mensual de *$582.000 COP*`
 			
 		},
 		{
@@ -76,7 +81,10 @@ const PlanSection = () => {
 			buttonText: "Lo Quiero!",
 			buttonColor: "purple",
 			borderColor: "var(--gradient-PremiumBasic) 1",
-			backgraundColor: "var(--gradient-PremiumBasic)"
+			backgraundColor: "var(--gradient-PremiumBasic)",
+			messageWhatsapp1: `¡Hola! Estoy interesado en el plan *Premium Basic* con 40% de descuento.%0A%0AMe gustaría saber más sobre el precio trimestal de *$664.000 COP*`,
+			messageWhatsapp2: `¡Hola! Estoy interesado en el plan *Premium Basic* con 40% de descuento.%0A%0AMe gustaría saber más sobre el precio mensual de *$232.800 COP*`
+			
 		},
 	];
 
@@ -91,13 +99,13 @@ const PlanSection = () => {
 						onClick={() => setSelectedPlan(plan)}
 						className={
 							selectedPlan.id === plan.id
-							 ? "active-plan" : ""
+								? "active-plan" : ""
 						}
 						style={
 							selectedPlan.id === plan.id
-							  ? { background: selectedPlan.backgraundColor } // Estilo en línea cuando está activo
-							  : {}
-						  }
+								? { background: selectedPlan.backgraundColor } // Estilo en línea cuando está activo
+								: {}
+						}
 					>
 						<p className="plan-option-title">{plan.name}</p><p>24 días</p>
 					</button>
@@ -147,24 +155,30 @@ const PlanSection = () => {
 								{selectedPlan.discountedTrimestralPrice}
 							</p>
 						</div>
-					)}	
+					)}
 					<div>
 						<p>Plan Mensual: </p>
 						<p className="discount">{selectedPlan.monthlyPrice}</p>
 						<p>{selectedPlan.discountedMonthlyPrice}</p>
 					</div>
 				</div>
-				<button
+				<a
 					className="plan-button1"
-					style={{background: selectedPlan.backgraundColor}}
+					style={{ background: selectedPlan.backgraundColor }}
+					href={`https://api.whatsapp.com/send?phone=3112964443&text=${selectedPlan.messageWhatsapp1}`}
+					target="_blank"
+					rel="noopener noreferrer"
 				>
 					{selectedPlan.buttonText}
-				</button>
-				<button
+				</a>
+				<a
 					className="plan-button2"
+					href={`https://api.whatsapp.com/send?phone=3112964443&text=${selectedPlan.messageWhatsapp2}`}
+					target="_blank"
+					rel="noopener noreferrer"
 				>
 					{selectedPlan.buttonText}
-				</button>
+				</a>
 			</div>
 		</div>
 	);
