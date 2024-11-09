@@ -44,7 +44,7 @@
 	z-index: 10;
 }
 @keyframes changeBackground {
-	0% {
+	5% {
 		background-image: url("../assets/photosHeader/photo1.jpg");
 	}
 
@@ -66,7 +66,7 @@
 	83% {
 		background-image: url("../assets/photosHeader/photo6.jpg");
 	}
-	100% {
+	95% {
 		background-image: url("../assets/photosHeader/photo7.jpg");
 	}
 }
