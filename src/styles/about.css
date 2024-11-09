@@ -3,12 +3,10 @@
     padding: 137px 0;    
     text-align: center;
     h2{
-    padding-top: 2rem;
+    padding: 3rem;
 
+  }
 }
-}
-
-
 
 .video-container {
     width: 100%;
@@ -24,7 +22,11 @@
 }
 .social_media_container{
   margin: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
-.cococo a{
-  width: 100px;
+.svg_social_media a{
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
 }

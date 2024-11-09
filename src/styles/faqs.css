@@ -13,19 +13,25 @@
 .faq h3 {
 	cursor: pointer;
 }
-.faq details p {
+.faq details p, .faq details ol {
 	color: var(--black);
 	padding-left: 10px;
 	font-weight: 600;
+}
+.faq details ol {
+	padding-left: 20px;
 }
 .faq details {
 	font-weight: 900;
 	font-family: "Urbanist", sans-serif;
 	padding: 10px;
-	width: 80%;
+	width: 95%;
 	font-size: 15px;
 	margin-bottom: 5px;
 	background-color: var(--gray);
+}
+.faq h2{
+	margin-bottom: 20px;
 }
 .faq .copy_right {
 	font-family: "Urbanist", sans-serif;

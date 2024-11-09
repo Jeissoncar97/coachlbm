@@ -1,11 +1,12 @@
 export default function Instagram(props) {
     return (
-      <div>
+      <div className="svg_social_media">
         <a href="">
           <svg 
           xmlns="http://www.w3.org/2000/svg" 
-          width="1em" 
-          height="1em" 
+          width="2em" 
+          height="2em" 
+          color="var(--black)"
           viewBox="0 0 24 24" 
           {...props}>
             <path 

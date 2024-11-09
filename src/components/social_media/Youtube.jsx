@@ -1,10 +1,12 @@
 export default function Youtube(props) {
     return (
-      <div className="">
+      <div className="svg_social_media">
         <a href="">
           <svg xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 24 24" 
           {...props}
+          width="2rem"
+          color="var(--black)"
           >
             <path 
             fill="currentColor" 

@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgReport from '../assets/imageReport.png'
+import ImgReport from '../assets/MockUp.svg'
 import '../styles/personalizedReport.css'
 
 const PersonalizedReports = () => {

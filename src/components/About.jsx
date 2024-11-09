@@ -18,7 +18,7 @@ const About = () => {
 				</video>
 			</div>
 			<div className="social_media_container">
-				<Instagram className="cococo"/>
+				<Instagram />
 				<TikTok />
 				<Facebook />
 				<Youtube />

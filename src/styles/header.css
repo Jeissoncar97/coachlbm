@@ -6,7 +6,7 @@
 	text-align: center;
 	background-size: cover;
 	background-position: center;
-	animation: changeBackground 3s infinite;
+	animation: changeBackground 5s infinite;
     h1 {
 		position: relative;
 		z-index: 10;
@@ -48,23 +48,26 @@
 		background-image: url("../assets/photosHeader/photo1.jpg");
 	}
 
-	20% {
+	17% {
 		background-image: url("../assets/photosHeader/photo2.jpg");
 	}
 
-	40% {
+	33% {
 		background-image: url("../assets/photosHeader/photo3.jpg");
 	}
 
-	60% {
+	50% {
 		background-image: url("../assets/photosHeader/photo4.jpg");
 	}
 
-	80% {
+	66% {
 		background-image: url("../assets/photosHeader/photo5.jpg");
 	}
-	100% {
+	83% {
 		background-image: url("../assets/photosHeader/photo6.jpg");
+	}
+	100% {
+		background-image: url("../assets/photosHeader/photo7.jpg");
 	}
 }
 
