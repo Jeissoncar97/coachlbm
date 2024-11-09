@@ -9,7 +9,11 @@ const PersonalizedReports = () => {
       <p>Recibe tus informes
       personalizados y visualizalos donde quieras!</p>
       <div>
-      <a href="https://www.youtube.com/watch?v=OmRotR0EdhI">CLIC AQUÍ</a>
+      <a 
+      href="https://forms.gle/CzJdWG7in61sC4y78"
+      target="_blank"
+      rel="noopener noreferrer"
+      >CLIC AQUÍ</a>
 
       </div>
     </section>

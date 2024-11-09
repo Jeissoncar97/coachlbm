@@ -115,9 +115,10 @@
 	left: 45px;
 	margin-top: 20px;
 	padding: 10px 25px;
-	color: white;
+	color: var(--white);
 	border: none;
 	border-radius: 20px;
+	text-decoration: none;
 	cursor: pointer;
 }
 .plan-button2 {
@@ -127,8 +128,9 @@
 	background-color: var(--general-background);
 	margin-top: 20px;
 	padding: 10px 25px;
-	color: white;
+	color: var(--white);
 	border: 2px solid var(--primary-color);
 	border-radius: 20px;
+	text-decoration: none;
 	cursor: pointer;
 }
