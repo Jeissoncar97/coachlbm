@@ -1,7 +1,10 @@
 export default function Youtube(props) {
     return (
       <div className="svg_social_media">
-        <a href="">
+        <a href=""
+        
+        target="_blank"
+        rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 24 24" 
           {...props}

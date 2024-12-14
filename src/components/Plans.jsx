@@ -165,7 +165,7 @@ const PlanSection = () => {
 				<a
 					className="plan-button1"
 					style={{ background: selectedPlan.backgraundColor }}
-					href={`https://api.whatsapp.com/send?phone=3112964443&text=${selectedPlan.messageWhatsapp1}`}
+					href={`https://api.whatsapp.com/send?phone=573216424034&text=${selectedPlan.messageWhatsapp1}`}
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -173,7 +173,7 @@ const PlanSection = () => {
 				</a>
 				<a
 					className="plan-button2"
-					href={`https://api.whatsapp.com/send?phone=3112964443&text=${selectedPlan.messageWhatsapp2}`}
+					href={`https://api.whatsapp.com/send?phone=573216424034&text=${selectedPlan.messageWhatsapp2}`}
 					target="_blank"
 					rel="noopener noreferrer"
 				>

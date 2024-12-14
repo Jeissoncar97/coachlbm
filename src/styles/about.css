@@ -28,6 +28,24 @@
 }
 .svg_social_media a{
   text-decoration: none;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
   padding: 5px;
   margin: 5px;
+  background-color: transparent;
+}
+.svg_social_media a:active, .svg_social_media a:focus{
+  outline: red;
+  background-color: transparent;
+}
+.svg_social_media svg:a, .svg_social_media svg:a {
+  outline: none;
+  background: none;
+  
+  outline: none;
+  background: none;
+  box-shadow: none;
 }

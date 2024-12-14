@@ -6,7 +6,7 @@ const WhatsApp = () => {
             <div className="sub-cont-whatsapp">
 
                 <a 
-                href="https://api.whatsapp.com/send?phone=3112964443&text=Hola!, estoy interesado en el servicio, me puedes ayudar?"
+                href="https://api.whatsapp.com/send?phone=573216424034&text=Hola!, estoy interesado en el servicio, me puedes ayudar?"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
